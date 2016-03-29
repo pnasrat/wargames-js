@@ -1,1 +1,2 @@
-document.write("Would you like to play a game?");
+require("!style!css!./style.css");
+document.write("SHALL WE PLAY A GAME?");
