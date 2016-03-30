@@ -4,7 +4,8 @@ module.exports = {
     entry: "./src/js/wargames.js",
     output: {
         path: __dirname,
-        filename: "bundle.js"
+        filename: "bundle.js",
+        publicPath: '/public/'
     },
     module: {
         loaders: [{
