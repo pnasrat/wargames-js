@@ -1,5 +1,6 @@
 describe('wargames', function() {
-    it("should not cause global-thermo nuclear war", function() {
-        fail();
+    it("Should greet the professor", function() {
+        expect(greeting().toEqual("foo"));
+        //fail();
     });
 });
