@@ -1,7 +1,8 @@
 var path = require("path");
 
 module.exports = {
-    entry: "./src/js/wargames.js",
+    devtool: "inline-source-map",
+    entry: "./src/js/index.js",
     output: {
         path: "./dist",
         filename: "bundle.js",

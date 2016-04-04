@@ -1,5 +1,3 @@
-var greeting = function() {
-    return "SHALL WE PLAY A GAME?";
+export function greeting() {
+	return "SHALL WE PLAY A GAME?";
 }
-
-document.write(greeting());

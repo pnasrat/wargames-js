@@ -1,17 +1,25 @@
-
 module.exports = function(config) {
     config.set({
 
-        frameworks: ['jasmine'],
-        files: [
-            'src/js/*.js',
-            'tests/*_spec.js'
-        ],
-        // list of files to exclude
-        exclude: [
-        ],
-        plugins: ['karma-jasmine', 'karma-phantomjs-launcher'],
         browsers: ['PhantomJS'],
-        reporters: ['progress'],
-    })
-}
+
+        files: [
+            { pattern: 'test-context.js'}
+        ],
+
+        frameworks: ['jasmine'],
+
+        preprocessors: {
+            'test-context.js': ['webpack']
+        },
+
+        webpack: {
+            module: {
+                loaders: [
+                    { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
+                ]
+            },
+            watch: true
+        }
+    });
+};
