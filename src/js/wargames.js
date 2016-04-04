@@ -1,5 +1,5 @@
-require("!style!css!../css/style.css");
-function greeting() {
-	return "SHALL WE PLAY A GAME?";
+var greeting = function() {
+    return "SHALL WE PLAY A GAME?";
 }
-//document.write(greeting());
+
+document.write(greeting());
